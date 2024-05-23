@@ -1,0 +1,50 @@
+<!-- options.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Options</title>
+</head>
+
+<body>
+  <h1>Summarizer Options</h1>
+  <label for="summary-length">Preferred Summary Length:</label>
+  <input type="number" id="summary-length" min="1" step="1" placeholder="Enter length">
+  <p id="status"></p>
+  <script>
+    // Get the current summary length setting from storage and display it on the options page
+    chrome.storage.sync.get(['summaryLength'], function (result) {
+      const summaryLengthInput = document.getElementById('summary-length');
+      summaryLengthInput.value = result.summaryLength || '';
+    });
+
+    // Save the user's preferred summary length to storage when they change the input value
+    document.getElementById('summary-length').addEventListener('change', function () {
+      const summaryLengthInput = document.getElementById('summary-length');
+      const summaryLength = parseInt(summaryLengthInput.value);
+
+      // Validate the input value
+      if (!isNaN(summaryLength) && summaryLength > 0) {
+        // Save the summary length setting to storage
+        chrome.storage.sync.set({ summaryLength: summaryLength }, function () {
+          // Notify the user that the setting has been saved
+          const status = document.getElementById('status');
+          status.textContent = 'Options saved.';
+          setTimeout(function () {
+            status.textContent = '';
+          }, 1500);
+        });
+      } else {
+        // Notify the user if the input value is invalid
+        const status = document.getElementById('status');
+        status.textContent = 'Please enter a valid number.';
+        setTimeout(function () {
+          status.textContent = '';
+        }, 1500);
+      }
+    });
+  </script>
+</body>
+
+</html>

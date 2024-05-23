@@ -1,0 +1,37 @@
+body {
+  width: 360px;
+  padding: 11px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 6px;
+  padding: 10px;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#loading {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #999;
+}
+
+#summary {
+  margin-top: 16px;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
