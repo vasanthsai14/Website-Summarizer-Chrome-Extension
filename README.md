@@ -19,7 +19,7 @@ The **Website Data Summarizer** is a Chrome extension designed to extract and su
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/website-summarizer-chrome-extension.git
+    git clone https://github.com/vasanthsai14/website-summarizer-chrome-extension.git
     ```
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable "Developer mode" by toggling the switch in the upper right corner.
