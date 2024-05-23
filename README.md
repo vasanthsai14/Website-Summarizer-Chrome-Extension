@@ -12,9 +12,9 @@ The **Website Data Summarizer** is a Chrome extension designed to extract and su
 ### Extension Popup
 ![Extension Popup](2024-05-23.png)
 
-![Screenshot 2](2024-05-23%(2).png)
+![Screenshot 2](2024-05-23(2).png)
 
-![Screenshot 3](2024-05-23%(3).png)
+![Screenshot 3](2024-05-23(3).png)
 
 ## Installation
 1. Clone the repository:
