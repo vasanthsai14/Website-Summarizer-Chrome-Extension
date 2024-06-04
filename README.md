@@ -1,7 +1,7 @@
 # Website-Summarizer-Chrome-Extension
 
 ## Overview
-The **Website Data Summarizer** is a Chrome extension designed to extract and summarize content from webpages. This extension leverages advanced natural language processing capabilities to provide concise summaries of lengthy articles, making it easier for users to grasp the main points quickly.
+The **Website Data Summarizer** is a Chrome extension designed to extract and summarize content from webpages.
 
 ## Features
 - **Content Summarization**: Automatically extracts and summarizes the main content from any webpage.
